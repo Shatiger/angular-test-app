@@ -1,3 +1,7 @@
-<ul *ngFor="let employee of employees">
-  <li>{{employee.id}}. {{employee.name}} - age {{employee.age}}</li>
-</ul>
+<h3>
+  You selected employee with id = {{ employeeId }}
+</h3>
+<a (click)="goPrevious()">Previous</a> <a (click)="goNext()">Next</a>
+<div>
+  <button (click)="goToEmployees()"></button>
+</div>
